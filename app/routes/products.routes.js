@@ -6,6 +6,6 @@ module.exports = (app) => {
     app.get('/products', products.findAll);
 
     // Retrieve a single CategoryId with noteId
-    app.get('/products/:categoryId', products.findAll);
+    app.get('/products/:categoryId', products.find);
    
 }

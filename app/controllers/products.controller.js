@@ -14,7 +14,7 @@ exports.findAll = (req, res) => {
 };
 
 
-exports.findAll = (req,res) => {
+exports.find = (req,res) => {
     Products.find({categoryId : req.params.categoryId})
     .then(products => {
         res.send(products);

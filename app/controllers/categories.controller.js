@@ -15,7 +15,7 @@ exports.findAll = (req, res) => {
 
 // Find a single category with a categoryId
 
-exports.findAll = (req,res) => {
+exports.find = (req,res) => {
     ProductCategories.find({categoryId : req.params.categoryId})
     .then(categories => {
         res.send(categories);
